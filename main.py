@@ -17,7 +17,7 @@ uurrll=all_args.two
 def scan_file():
         url = 'https://www.virustotal.com/vtapi/v2/file/scan'
 
-        params = {'apikey': '32ffd2bdace2f7830ac5e7d23019c68af734c1dc2c4e9ca4822fef685f4461f2'}
+        params = {'apikey': 'api key here'}
 
         files = {'file': (str(ffile_name), open(str(ffile_name), 'rb'))}
 
@@ -36,7 +36,7 @@ def scan_file():
 def scan_url():
         urlurl = 'https://www.virustotal.com/vtapi/v2/url/scan'
 
-        paramsurl = {'apikey': '32ffd2bdace2f7830ac5e7d23019c68af734c1dc2c4e9ca4822fef685f4461f2', 'url':(uurrll)}
+        paramsurl = {'apikey': 'api key here', 'url':(uurrll)}
 
         responseurl = requests.post(urlurl, data=paramsurl)
 
